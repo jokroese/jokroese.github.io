@@ -1,12 +1,12 @@
 # Permalinks
 permalink:           pretty
 
-# Setup
+# Basic website info
 title:               Joe Kroese
 tagline:             Math, Music and Film in Manchester
-url:                 http://joekroese.com
-paginate:            1
-baseurl:             ""
+description:         The personal website of Joe Kroese
+url:                 https://joekroese.com
+baseurl:             "https://joekroese.com"
 
 # Assets
 #
@@ -26,8 +26,17 @@ version:             1.0.0
 github:
   repo:              https://github.com/joekroese/joekroese.github.io
 google_analytics:    UA-105799284-1
-twitter:             joekroese
+twitter:
+  username: joekroese
 github:              joekroese
+paginate:            1
+
+social:
+  name: Joe Kroese
+  links:
+    - https://twitter.com/joekroese
+    - https://github.com/joekroese
+
 
 # Gems
 gems:
