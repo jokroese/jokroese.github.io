@@ -1,8 +1,8 @@
 # Site settings
 title: Joe Kroese
-description: >
-  The personal website of Joe Kroese
+description: The personal website of Joe Kroese, a home of data, stories, justice and play.
 url: "https://joekroese.com" # the base hostname & protocol for your site
+baseurl: "/" 
 lang:                en_GB
 image:               /public/profile.jpg
 tagline:             Maths, Music and Film in Manchester
@@ -11,14 +11,7 @@ tagline:             Maths, Music and Film in Manchester
 author:
   fullname: Joe Kroese
   github: joekroese
-twitter: joekroese
-
-social:
-  name: Joe Kroese
-  links:
-    - https://twitter.com/joekroese
-    - https://github.com/joekroese
-
+  twitter: joekroese
 
 # Permalinks
 permalink:           pretty
