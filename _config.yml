@@ -1,14 +1,28 @@
+# Site settings
+title: Joe Kroese
+description: >
+  The personal website of Joe Kroese
+baseurl: "https://joekroese.com" # the subpath of your site, e.g. /blog/
+url: "https://joekroese.com" # the base hostname & protocol for your site
+lang:                en_GB
+image:               /public/profile.jpg
+tagline:             Maths, Music and Film in Manchester
+
+
+author:
+  fullname: Joe Kroese
+  github: joekroese
+twitter: joekroese
+
+social:
+  name: Joe Kroese
+  links:
+    - https://twitter.com/joekroese
+    - https://github.com/joekroese
+
+
 # Permalinks
 permalink:           pretty
-
-# Basic website info
-title:               Joe Kroese
-tagline:             Maths, Music and Film in Manchester
-description:         The personal website of Joe Kroese
-image:               /public/profile.jpg
-url:                 https://joekroese.com
-baseurl:             "https://joekroese.com"
-lang:                en_GB
 
 # Assets
 #
@@ -17,28 +31,13 @@ sass:
   sass_dir:          _sass
   style:            :compressed
 
-# About/contact
-author:
-  name:              Joe Kroese
-  url:               https://twitter.com/joekroese
-  email:             joekroese@gmail.com
-
 # Custom vars
 version:             1.0.0
 github:
   repo:              https://github.com/joekroese/joekroese.github.io
 google_analytics:    UA-105799284-1
-twitter:
-  username: joekroese
-github:              joekroese
+
 paginate:            1
-
-social:
-  name: Joe Kroese
-  links:
-    - https://twitter.com/joekroese
-    - https://github.com/joekroese
-
 
 # Gems
 gems:
