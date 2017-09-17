@@ -2,7 +2,7 @@
 title: Joe Kroese
 description: The personal website of Joe Kroese, a home of data, stories, justice and play.
 url: "https://joekroese.com" # the base hostname & protocol for your site
-baseurl: "/" 
+baseurl: "" 
 lang:                en_GB
 image:               /public/profile.jpg
 tagline:             Maths, Music and Film in Manchester
