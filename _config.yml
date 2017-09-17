@@ -2,7 +2,6 @@
 title: Joe Kroese
 description: >
   The personal website of Joe Kroese
-baseurl: "https://joekroese.com" # the subpath of your site, e.g. /blog/
 url: "https://joekroese.com" # the base hostname & protocol for your site
 lang:                en_GB
 image:               /public/profile.jpg
