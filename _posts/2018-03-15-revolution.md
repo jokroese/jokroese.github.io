@@ -1,6 +1,7 @@
 ---
-layout: post
 title: networks and revolution
+date: 2018-03-15 00:00:00 Z
+layout: post
 git: https://github.com/joekroese/networks-and-revolution
 ---
 

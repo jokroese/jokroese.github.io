@@ -1,41 +1,36 @@
-# Site settings
+---
 title: Joe Kroese
-description: The personal website of Joe Kroese, a home of data, stories, justice and play.
-url: "https://joekroese.com" # the base hostname & protocol for your site
-baseurl: "" 
-lang:                en_GB
-image:               /public/profile.jpg
-tagline:             Maths, Music and Film in Manchester
-
-
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+description: The personal website of Joe Kroese, a home of data, stories, justice
+  and play.
+url: https://joekroese.com
+baseurl: ''
+lang: en_GB
+image: "/public/profile.jpg"
+tagline: Maths, Music and Film in Manchester
 author:
   fullname: Joe Kroese
   github: joekroese
   twitter: joekroese
-
-# Permalinks
-permalink:           pretty
-
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
+permalink: pretty
 sass:
-  sass_dir:          _sass
-  style:            :compressed
-
-# Custom vars
-version:             1.0.0
+  sass_dir: _sass
+  style: :compressed
+version: 1.0.0
 github:
-  repo:              https://github.com/joekroese/joekroese.github.io
-google_analytics:    UA-105799284-1
-
-paginate:            1
-
-# Gems
+  repo: https://github.com/joekroese/joekroese.github.io
+google_analytics: UA-105799284-1
+paginate: 1
 gems:
-  - jekyll-paginate
-  - jekyll-gist
-  - jekyll-seo-tag
-
+- jekyll-paginate
+- jekyll-gist
+- jekyll-seo-tag
 plugins:
-  - jekyll-sitemap
+- jekyll-sitemap
