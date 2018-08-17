@@ -1,11 +1,11 @@
 # Site settings
 title: Joe Kroese
-description: The personal website of Joe Kroese, a home of data, stories, justice and play.
+description: The personal website of Joe Kroese, a place of data, stories and play.
 url: "https://joekroese.com" # the base hostname & protocol for your site
 baseurl: "" 
 lang:                en_GB
 image:               /public/profile.jpg
-tagline:             Maths, Music and Film in Manchester
+tagline:             Data science, music and startups in Montreal
 
 
 author:
@@ -32,10 +32,8 @@ google_analytics:    UA-105799284-1
 paginate:            1
 
 # Gems
-gems:
+plugins:
+  - jekyll-sitemap
   - jekyll-paginate
   - jekyll-gist
   - jekyll-seo-tag
-
-plugins:
-  - jekyll-sitemap
