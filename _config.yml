@@ -8,7 +8,8 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: The personal website of Joe Kroese, a place of data, stories, justice and play.
+description: The personal website of Joe Kroese, a place of data, stories, justice
+  and play.
 url: https://joekroese.com
 baseurl: ''
 lang: en_GB
