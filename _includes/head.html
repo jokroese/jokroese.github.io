@@ -3,17 +3,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
-    <meta content="Jo Kroese" property="og:title">
-    <meta content="Website" property="og:type">
-    <meta content="{{ site.baseurl }}/public/profile.jpg" property="og:image">
-    <meta content="{{ site.baseurl }}" property="og:url">
-
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline }}
     {% else %}
       {{ page.title }} &middot; {{ site.title }}
     {% endif %}
   </title>
+
+  <meta content="Jo Kroese" property="og:title">
+  <meta content="Website" property="og:type">
+  <meta content="{{ site.baseurl }}/public/profile.jpg" property="og:image">
+  <meta content="{{ site.baseurl }}" property="og:url">
 
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
   
