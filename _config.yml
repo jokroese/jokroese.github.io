@@ -13,7 +13,7 @@ description: The personal website of Jo Kroese, a place of data, stories, justic
 url: https://jokroese.com
 baseurl: ''
 lang: en_GB
-image: "/public/profile.jpg"
+image: "/assets/img/profile.jpg"
 tagline: Data science, music and startups in Montreal
 author:
   fullname: Jo Kroese
