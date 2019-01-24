@@ -8,8 +8,8 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: The personal website of Jo Kroese, where I talk about data, design, stories, politics
-  and play.
+description: The personal website of Jo Kroese, where I talk about data, design, stories,
+  politics and play.
 url: https://jokroese.com
 baseurl: ''
 lang: en_GB
