@@ -57,6 +57,13 @@ img {
   border-radius: 5px;
 }
 
+img.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+
 table {
   margin-bottom: 1rem;
   width: 100%;

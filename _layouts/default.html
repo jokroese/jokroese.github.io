@@ -10,7 +10,7 @@
       <div class="large-12 large-centered columns">
 
         <header class="masthead">
-          <img src="{{ site.baseurl }}/assets/img/profile.jpg" alt="joe kroese">
+            <img src="{{ site.baseurl }}/assets/img/profile.jpg" alt="jo kroese" class="rounded">
         </header>
 
         <nav class="navbar">
@@ -64,7 +64,7 @@
         </p>
 
         <p class="copyright">
-          another lovely <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%A' }} in {{ site.time | date: '%Y' }}</time>.
+          another lovely <time datetime="{{ site.time | date_to_xmlschema }}">{{ 'now' | date: '%A' }} in {{ 'now' | date: "%Y" }}</time>.
         </p>
       </footer>
 
