@@ -5,6 +5,9 @@ collections:
   posts:
     title: Posts
     output: true
+  projects:
+    title: Projects
+    output: false
   uploads:
     title: Uploads
     output: true
@@ -33,6 +36,3 @@ plugins:
 - jekyll-paginate
 - jekyll-gist
 - jekyll-seo-tag
-
-collections:
-  - projects
