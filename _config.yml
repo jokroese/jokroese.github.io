@@ -33,3 +33,6 @@ plugins:
 - jekyll-paginate
 - jekyll-gist
 - jekyll-seo-tag
+
+collections:
+  - projects
