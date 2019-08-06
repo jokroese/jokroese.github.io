@@ -3,31 +3,56 @@ title: Home
 layout: default
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+    
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+    <div class="row">
 
-    {{ post.content }}
-  </article>
-  {% endfor %}
-</div>
+        <div class="large-6 large-offset-3 columns">
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+            <div class="content-section">
+
+                <p>
+                    Hi, I’m <strong>Jo Kroese</strong>. I'm a data scientist and artist based in Amsterdam. I am the director of <a href="radicaldata.org">Radical Data</a> and spend time researching the environment and social justice.
+                </p>
+                <p>
+                    After a brief stint as a filmmaker, I studied mathematics at the University of Manchester and McGill University. I now use maths to tinker with ecological research, art, technology and investigative journalism.
+                </p>
+                <p>
+                    I also make live-coded music</a> as <a href="https://soundcloud.com/jobijobijobi">Jobi</a>.
+                </p>
+
+            </div>
+
+            <main>
+                <h2>Featured Projects</h2>
+                {% for project in site.projects %}
+                <div class="project-post">
+                    <h3><a href="{{ project.link }}">{{ project.title }}</a></h3>
+                    {{ project.content }}
+                </div>
+                {% endfor %}
+            </main>
+
+            <footer>
+            <h2>Contact Me</h2>
+
+                <p>
+                    If you'd like to get in touch, message me on <a href="https://twitter.com/joekroese">Twitter</a>, be professional on <a href="https://www.linkedin.com/in/jo-kroese/">LinkedIn</a>, code with me on <a href="https://github.com/joekroese">GitHub</a>                    or read a <a href="https://www.goodreads.com/joekroese">book</a> with me.
+                </p>
+                </footer>
+
+        </div>
+
+        <div class="large-2 large-offset-1 columns social">
+            <ul>
+                <li><a href="https://github.com/joekroese"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jo-kroese/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/joekroese"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://vimeo.com/joekroese"><i class="fa fa-vimeo"></i></a></li>
+                <li><a href="https://soundcloud.com/jobijobijobi"><i class="fa fa-soundcloud"></i></a></li>
+            </ul>
+        </div>
+
+    </div>
+
+ 

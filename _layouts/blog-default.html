@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <main class="wrapper">
+      
+      {% include header.html %}
+      {% include navbar.html %}
+
+      <div class="container">
+      <div class = "large-8 large-offset-2 columns">
+        {{ content }}
+
+        {% include footer.html %}
+      </div>
+      </div>
+    
+    </main>
+
+    {% include scripts.html %}
+    
+  </body>
+
+</html>

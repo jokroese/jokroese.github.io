@@ -3,109 +3,26 @@
 
 {% include head.html %}
 
-
 <body>
-
     <div class="row">
         <div class="large-12 large-centered columns">
-
-            <header class="masthead">
-                <img src="{{ site.baseurl }}/assets/img/profile.png" alt="Jo Kroese" class="rounded">
-            </header>
-
-            <nav class="navbar">
-                <ul>
-                    <li class="nav-item"><a href="{{ site.url }}/">about</a></li>
-                    <!-- <li class="nav-item"><a href="{{ site.baseurl }}/blog/">blog</a></li> -->
-                    <li class="nav-item"><a href="https://jokroeseblog.netlify.com/">blog</a></li>
-                </ul>
-            </nav>
-
+            {% include header.html %}
+            {% include navbar.html %}
         </div>
     </div>
 
-    <div class="row">
-
+    <main class="wrapper">
+      {{ content }}
+      <div class="row">
         <div class="large-6 large-offset-3 columns">
-
-            <div class="content-section">
-
-                <p>
-                    Hi, I’m <strong>Jo Kroese</strong>. I'm a data scientist and artist based in Amsterdam. I am the director of <a href="radicaldata.org">Radical Data</a> and spend time researching the environment and social justice.
-                </p>
-                <p>
-                    After a brief stint as a filmmaker, I studied mathematics at the University of Manchester and McGill University. I now use maths to tinker with ecological research, art, technology and investigative journalism.
-                </p>
-                <p>
-                    I also make live-coded music</a> as <a href="https://soundcloud.com/jobijobijobi">Jobi</a>.
-                </p>
-
-            </div>
-
-            <main>
-                <h2>Featured Projects</h2>
-                {% for project in site.projects %}
-                <div class="project-post">
-                    <h3><a href="{{ project.link }}">{{ project.title }}</a></h3>
-                    {{ project.content }}
-                </div>
-                {% endfor %}
-            </main>
-
-            <footer>
-                <h2>Contact Me</h2>
-
-                <p>
-                    If you'd like to get in touch, message me on <a href="https://twitter.com/joekroese">Twitter</a>, be professional on <a href="https://www.linkedin.com/in/joe-kroese/">LinkedIn</a>, code with me on <a href="https://github.com/joekroese">GitHub</a>                    or read a <a href="https://www.goodreads.com/joekroese">book</a> with me.
-                </p>
-
-                <p class="copyright">
-                    another lovely
-                    <script type="text/javascript">
-                        var d = new Date();
-                        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-                        document.write(days[d.getDay()]);
-                    </script>
-                    in
-                    <script type="text/javascript">
-                        document.write(new Date().getFullYear());
-                    </script>.
-                    <!-- <time datetime="{{ site.time | date_to_xmlschema }}">{{ 'now' | date: '%A' }} in {{ 'now' | date: "%Y" }}</time>. -->
-                </p>
-            </footer>
-
+        <footer class="footer">
+        {% include footer.html %}
+        </footer>
         </div>
+      </div>
+    </main>
 
-        <div class="large-2 large-offset-1 columns social">
-            <ul>
-                <li><a href="https://github.com/joekroese"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/joe-kroese/"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="https://twitter.com/joekroese"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://vimeo.com/joekroese"><i class="fa fa-vimeo"></i></a></li>
-                <li><a href="https://soundcloud.com/jobijobijobi"><i class="fa fa-soundcloud"></i></a></li>
-                <li><a href="https://www.goodreads.com/joekroese"><i class="fa fa-book"></i></a></li>
-            </ul>
-        </div>
-
-    </div>
-
-    {% if site.google_analytics %}
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-    </script>
-    {% endif %}
+     {% include scripts.html %}
 
 </body>
 

@@ -8,13 +8,16 @@ collections:
   uploads:
     title: Uploads
     output: true
+  projects:
+    title: Projects
+    output: false
 description: The personal website of Jo Kroese, where I talk about data, design, stories,
   politics and play.
 url: https://jokroese.com
 baseurl: ''
 lang: en_GB
 image: "/assets/img/profile.jpg"
-tagline: Data science, music and startups in Amsterdam
+tagline: Data science, art and music in Amsterdam
 author:
   fullname: Jo Kroese
   github: joekroese
@@ -28,11 +31,8 @@ github:
   repo: https://github.com/joekroese/joekroese.github.io
 google_analytics: UA-105799284-1
 paginate: 1
-plugins:
-- jekyll-sitemap
-- jekyll-paginate
-- jekyll-gist
-- jekyll-seo-tag
-
-collections:
-  - projects
+# plugins:
+#   - jekyll-sitemap
+#   - jekyll-paginate
+#   - jekyll-gist
+#   - jekyll-seo-tag

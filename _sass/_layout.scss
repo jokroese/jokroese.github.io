@@ -1,59 +1,83 @@
 // Layout
 //
 // Styles for managing the structural hierarchy of the site.
-
 .social {
-  ul {
-    @include bp-small {
-      text-align: center;
+    ul {
+        @include bp-small {
+            text-align: center;
+        }
+        @include bp-medium {
+            text-align: center;
+        }
     }
-    @include bp-medium {
-      text-align: center;
+    li {
+        margin-bottom: 0.75em;
+        @include bp-small {
+            display: inline-block;
+            padding-right: 1em;
+        }
+        @include bp-medium {
+            display: inline-block;
+            padding-right: 1em;
+        }
     }
-  }
-  li {
-    margin-bottom: 0.75em;
-    @include bp-small {
-      display: inline-block;
-      padding-right: 1em;
+    i {
+        font-size: 28px;
     }
-    @include bp-medium {
-      display: inline-block;
-      padding-right: 1em;
-    }
-  }
-  i {
-    font-size: 28px;
-  }
 }
 
 footer {
-  margin: 4em 0;
-  h2 {
-    margin-bottom: 1em;
-    font-size: 22px;
-  }
-  p {
-    font-size: 18px;
-  }
-  .copyright {
-    margin-top: 4em;
-    color: #d1d1d1;
-    @include bp-small {
-      text-align: center;
+    margin: 4em 0;
+    h2 {
+        margin-bottom: 1em;
+        font-size: 22px;
     }
-    @include bp-medium {
-      text-align: center;
+    p {
+        font-size: 18px;
     }
-  }
+    .copyright {
+        margin-top: 4em;
+        color: #d1d1d1;
+        @include bp-small {
+            text-align: center;
+        }
+        @include bp-medium {
+            text-align: center;
+        }
+    }
 }
 
 .navbar {
-  text-align: center;
-  display: block;
+    text-align: center;
+    display: block;
 }
 
 .nav-item {
-  display: inline-block;
-  padding: 1rem;
+    display: inline-block;
+    padding: 1rem;
 }
+
+// for blog
+.blog-column {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+}
+
+.preview-panel {
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+
+.preview-img {
+    border-radius: 50%;
+    // cursor: pointer;
+    margin: 0em;
+}
+
+.post-title-site {}
+
+// .row {
+//     display: flex;
+//     flex-direction: row;
+// }

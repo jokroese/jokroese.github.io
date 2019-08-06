@@ -1,25 +1,26 @@
 ---
-layout: default
+
+layout: blog-default
+
 ---
+  
+<div class="post">
+  <div class="post-nav">
+    {% if page.next.url %}
+      <a class="nav-item" href="{{ page.next.url | prepend: site.baseurl }}">&laquo; Newer</a>
+    {% endif %}
+    {% if page.previous.url %}
+      <a class="nav-item" href="{{ page.previous.url | prepend: site.baseurl }}">Older &raquo;</a>
+    {% endif %}
+  </div>
 
-<article class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
-  {{ content }}
-</article>
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <h3 class="post-subtitle">{{ page.subtitle }}</h3>
+  </header>
 
-{% if site.related_posts != empty %}
-<aside class="related">
-  <h3>Related posts</h3>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-          <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</aside>
-{% endif %}
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+</div>
