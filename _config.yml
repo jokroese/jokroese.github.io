@@ -11,9 +11,6 @@ collections:
   uploads:
     title: Uploads
     output: true
-  projects:
-    title: Projects
-    output: false
 description: The personal website of Jo Kroese, where I talk about data, design, stories,
   politics and play.
 url: https://jokroese.com

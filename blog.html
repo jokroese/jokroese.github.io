@@ -1,20 +1,20 @@
 ---
 
 title: Blog
-layout: default
+layout: blog-default
 
 ---
 
 {% for post in site.posts %}
     {% cycle 'add row' : '<div class="row">', '', '' %}
-        <div class="column column-33">
+        <div class="column large-4 small-12">
             <div class="preview-panel">
-                {% comment %} <a href="{{ post.url | prepend: site.baseurl }}">
-                    <img class="preview-img" src="{{ post.preview | prepend: post.url | prepend: site.baseurl }}">
-                 {% endcomment %}
                 <a href="{{ post.url | prepend: site.baseurl }}">
-                <div class="post-title-site">{{ post.title }}</div>
+                    <img class="preview-img" src="{{ post.preview | prepend: post.url | prepend: site.baseurl }}">
                 </a>
+                {% comment %} <a href="{{ post.url | prepend: site.baseurl }}">
+                <div class="post-title-site">{{ post.title }}</div>
+                </a> {% endcomment %}
            </div>
         </div>
 {% cycle 'end row' : '', '', '</div>' %}

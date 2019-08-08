@@ -58,21 +58,21 @@ footer {
 }
 
 // for blog
-.blog-column {
-    flex: 0 0 33.3333%;
-    max-width: 33.3333%;
-}
-
 .preview-panel {
     position: relative;
     overflow: hidden;
     float: left;
+    margin: 0 auto;
 }
 
 .preview-img {
     border-radius: 50%;
     // cursor: pointer;
     margin: 0em;
+    max-height: 10em;
+    display: block;
+    max-width: 100%;
+    margin: 0 0 1rem;
 }
 
 .post-title-site {}
@@ -80,4 +80,7 @@ footer {
 // .row {
 //     display: flex;
 //     flex-direction: row;
+// }
+// .row::before {
+//     // clear: none;
 // }
