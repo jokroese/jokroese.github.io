@@ -1,16 +1,6 @@
 ---
 title: Jo Kroese
 timezone: UTC
-collections:
-  posts:
-    title: Posts
-    output: true
-  projects:
-    title: Projects
-    output: false
-  uploads:
-    title: Uploads
-    output: true
 description: The personal website of Jo Kroese, where I talk about data, design, stories,
   politics and play.
 url: https://jokroese.com
@@ -29,10 +19,21 @@ sass:
 version: 1.0.0
 github:
   repo: https://github.com/joekroese/joekroese.github.io
-google_analytics: UA-105799284-1
+google_analytics: UA-61246528-2
 paginate: 1
 # plugins:
 #   - jekyll-sitemap
 #   - jekyll-paginate
 #   - jekyll-gist
 #   - jekyll-seo-tag
+
+collections:
+  posts:
+    title: Posts
+    output: true
+  projects:
+    title: Projects
+    output: false
+  uploads:
+    title: Uploads
+    output: true

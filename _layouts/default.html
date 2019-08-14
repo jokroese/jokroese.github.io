@@ -22,7 +22,9 @@
       </div>
     </main>
 
-     {% include scripts.html %}
+    {% jekyll.environment == 'production' %}
+      {% include analytics.html %}
+    {% endif %}
 
 </body>
 
