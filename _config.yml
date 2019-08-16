@@ -31,6 +31,8 @@ collections:
   posts:
     title: Posts
     output: true
+  pages:
+    output: true
   projects:
     title: Projects
     output: false
