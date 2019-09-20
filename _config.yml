@@ -1,13 +1,12 @@
 ---
 title: Jo Kroese
 timezone: UTC
-description: The personal website of Jo Kroese, where I talk about data, design, stories,
-  politics and play.
+description: Freelance data scientist and artist based in Amsterdam, with a focus on analysing and visualising  the environment and social justice.
 url: https://jokroese.com
 baseurl: ''
 lang: en_GB
 image: "/assets/img/profile.jpg"
-tagline: Data science, art and music in Amsterdam
+tagline: Freelance data scientist and artist based in Amsterdam, with a focus on analysing and visualising the environment and social justice
 author:
   fullname: Jo Kroese
   github: joekroese
