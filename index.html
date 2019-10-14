@@ -12,7 +12,9 @@ layout: default
             <div class="content-section">
 
                 <p>
-                    Hi, I’m <a href="http://my.pronoun.is/they">Jo Kroese</a> and I live in Amsterdam. I'm interested in using code and data for good to promote action and understanding. I'm always finding new projects to work and play with - but there are three main things that keep me busy.
+                    Hi, I’m <a href="http://my.pronoun.is/they">Jo Kroese</a>, a data scientist, artist and musician based in Amsterdam.
+                    My work focuses on using technology to make the world more joyful and just.
+                    There are three main ways that comes out.
                 </p>
                 <p>  
                     1. I work as a <a href="https://www.linkedin.com/in/jo-kroese/">freelance data scientist</a>.
@@ -21,34 +23,20 @@ layout: default
                     2. I run the <a href="https://radicaldata.org">Radical Data Project</a>.
                 </p>
                 <p>
-                    3. I make live-coded music as <a href="https://soundcloud.com/jobijobijobi">Jobi</a>.
+                    3. I make live coded music as <a href="https://soundcloud.com/jobijobijobi">Jobi</a>.
                 </p>
-                <p>
-                 My data science research focuses on the environment and social justice. I have collaborated and published papers with organisations such as Cefas, Substance and Data for Good.
-                 The Radical Data Project gives me space to explore the role of data science and how it could work more in the interest of the average person.
-                 My music makes happy connections between electronic noises and organic bodies.
-                 </p>
                  <p>
                  If you'd like to collaborate with me, hire me or ask me about my work, that would be lovely. Please feel free to <a href="https://twitter.com/joekroese">get in touch</a>.
-                 </p>
+            </p>
 
             </div>
 
-            <main>
-                <h2>Featured Projects</h2>
-                {% for project in site.projects %}
-                <div class="project-post">
-                    <h3><a href="{{ project.link }}">{{ project.title }}</a></h3>
-                    {{ project.content }}
-                </div>
-                {% endfor %}
-            </main>
-
-            <footer>
-            <h2>Worked with</h2>
-
+            <div class="content-section">
+                <h2>Freelance Data Scientist</h2>
                 <p>
-                    I have collaborated with some world-leading research organisations across the areas of environment and social justice. I have also provided insights to inspirational charities and social businesses.
+                    My data science research focuses on the environment and social justice. 
+                    I have collaborated with some world-leading research organisations such as Cefas, Substance and Data for Good.
+                    As a consultant, I have also provided insights to inspirational charities and social businesses.
                 </p>
                 <div class="align-center">
                     <ul class="inline-list">
@@ -59,14 +47,75 @@ layout: default
                         <li><a class="colab-logo" href="https://thegreenpanther.com"><img src="assets/logos/panthere-verte-2.png"></a></li>
                         <li><a class="colab-logo" href="https://www.hec.ca"><img src="assets/logos/hec.png"></a></li> {% endcomment %}
                     </ul>
+                    
+            </div>
+
+            </div>
+
+            <div class="content-section">
+                <h2>Radical Data Project</h2>
+                <p>
+                    The Radical Data Project gives me space to document and explore a <i>data counter-culture</i>.
+                    I am interested in ways we can use data and tech to work for citizens.
+                    This takes me to innovative uses of data in areas as disparate as art, journalism, law and activism.
+                    {% comment %} Insert instagram here {% endcomment %}
+                </p>
+            </div>
+
+            <div class="content-section">
+                <h2>Live Coding Music</h2>
+                <p>
+                    I play live coded music as Jobi.
+                </p>
+                <h5>Upcoming shows:</h5>
+                {% for event in site.data.events %}
+                    <div future-date="{{ event.date | date: '%Y%m%d' }}">
+                        <p><a href={{ event.link }}> {{ event.date | date: '%d %B %Y' }} - {{ event.title }} </a></p>
+                    </div>
+                {% endfor %}
+            </div>
+
+            {% comment %} <main>
+                <h2>Featured Projects</h2>
+                {% for project in site.projects %}
+                <div class="project-post">
+                    <h3><a href="{{ project.link }}">{{ project.title }}</a></h3>
+                    {{ project.content }}
+                </div>
+                {% endfor %}
+            </main> {% endcomment %}
+
+            {% comment %} <div class="content-section">
+            <h2>Worked with</h2>
+
+                <p>
+                    I have collaborated with some world-leading research organisations across the areas of environment and social justice. I have also provided insights to inspirational charities and social businesses.
+                </p>
+                <div class="align-center">
+                    <ul class="inline-list">
+                        <li><a class="colab-logo" href="https://www.cefas.co.uk"><img src="assets/logos/cefas-6.png"></a></li>
+                        <li><a class="colab-logo" href="https://dataforgood.ca"><img src="assets/logos/data-for-good.jpg"></a></li>
+                        <li><a class="colab-logo" href="https://www.substance.net"><img src="assets/logos/substance-2.png"></a></li>
+                        <li><a class="colab-logo" href="/"><img src="assets/logos/mtlgreen.png"></a></li>
+                        <li><a class="colab-logo" href="https://thegreenpanther.com"><img src="assets/logos/panthere-verte-2.png"></a></li>
+                        <li><a class="colab-logo" href="https://www.hec.ca"><img src="assets/logos/hec.png"></a></li>
+                    </ul>
                 </div>
                 <p>
                     If you would like to see what we could do together, please <a href="https://twitter.com/joekroese">get in touch<a>.
                 </p>
+
+                <p>
+                 My data science research focuses on the environment and social justice. I have collaborated and published papers with organisations such as Cefas, Substance and Data for Good.
+                 The Radical Data Project gives me space to explore the role of data science and how it could work more in the interest of the average person.
+                 My music makes happy connections between electronic noises and organic bodies.
+                 </p>
                 
-                </footer>
+            </div> {% endcomment %}
 
         </div>
+
+        
 
         <div class="large-2 large-offset-1 columns social">
             <ul>
@@ -80,4 +129,3 @@ layout: default
 
     </div>
 
- 
