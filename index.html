@@ -12,7 +12,7 @@ layout: default
             <div class="content-section">
 
                 <p>
-                    Hi, I’m <a href="http://my.pronoun.is/they">Jo Kroese</a>, a data scientist, artist and musician based in Amsterdam.
+                    Hi, I’m <a href="http://my.pronoun.is/they">Jo Kroese</a>, a data scientist, artist and musician based between Newcastle and Amsterdam.
                     My work focuses on using technology to make the world more joyful and just.
                     There are three main ways that comes out.
                 </p>
@@ -67,12 +67,12 @@ layout: default
                 <p>
                     I play live coded music as Jobi.
                 </p>
-                <h5>Upcoming shows:</h5>
+                {% comment %} <h5>Upcoming shows:</h5>
                 {% for event in site.data.events %}
                     <div future-date="{{ event.date | date: '%Y%m%d' }}">
                         <p><a href={{ event.link }}> {{ event.date | date: '%d %B %Y' }} - {{ event.title }} </a></p>
                     </div>
-                {% endfor %}
+                {% endfor %} {% endcomment %}
             </div>
 
             {% comment %} <main>
